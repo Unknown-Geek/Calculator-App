@@ -104,14 +104,15 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: const Color.fromARGB(255, 40, 40, 40),
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Expanded(
               flex: 3,
               child: Container(
+                alignment: Alignment.center,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       _typedValue.toString(),
@@ -134,12 +135,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ), //Answer display
             Expanded(
+              flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: _clear,
                         icon: Icon(
@@ -148,8 +150,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: _backspace,
                         icon: Icon(
@@ -158,8 +160,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleOperation('%'),
                         icon: Icon(
@@ -168,8 +170,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleOperation('÷'),
                         icon: Icon(CupertinoIcons.divide, size: 50)),
@@ -178,12 +180,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Expanded(
+              flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('7'),
                         icon: Text(
@@ -192,8 +195,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('8'),
                         icon: Text(
@@ -202,8 +205,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('9'),
                         icon: Text(
@@ -212,8 +215,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleOperation('×'),
                         icon: Icon(CupertinoIcons.multiply, size: 50)),
@@ -222,12 +225,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Expanded(
+              flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('4'),
                         icon: Text(
@@ -236,8 +240,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('5'),
                         icon: Text(
@@ -246,8 +250,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('6'),
                         icon: Text(
@@ -256,8 +260,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleOperation('-'),
                         icon: Icon(CupertinoIcons.minus, size: 50)),
@@ -266,12 +270,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Expanded(
+              flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('1'),
                         icon: Text(
@@ -280,8 +285,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('2'),
                         icon: Text(
@@ -290,8 +295,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('3'),
                         icon: Text(
@@ -300,8 +305,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleOperation('+'),
                         icon: Icon(CupertinoIcons.add, size: 50)),
@@ -310,12 +315,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Expanded(
+              flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: null,
                         icon: Text(
@@ -324,8 +330,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('0'),
                         icon: Text(
@@ -334,8 +340,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                         onPressed: () => _handleNumber('.'),
                         icon: Text(
@@ -344,8 +350,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         )),
                   ),
                   SizedBox(
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                     child: IconButton.filled(
                       onPressed: _handleEquals,
                       icon: Icon(CupertinoIcons.equal, size: 50),
